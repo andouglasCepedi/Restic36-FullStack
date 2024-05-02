@@ -1,47 +1,146 @@
 <html>
-  <head>
-    <title>Tags HTML</title>
-  </head>
-  <body>
-    <!-- Elemento de Topo -->
-   <div id="header">
-      <img src="src/images/logo-nav.png" width="200px">
-      <h3>Restic36 - Cursos em TI</h3>
-   </div>
 
-   <div id="content">
+<head>
+  <title>Tags HTML</title>
+</head>
+
+<body>
+  <!-- Elemento de Topo -->
+  <div id="header">
+    <img src="src/images/logo-nav.png" width="200px">
+    <h3>Restic36 - Cursos em TI</h3>
+  </div>
+
+  <div id="content">
     <div id="description">
-      <p>No coração da inovação baiana, com uma abordagem única e focada na prática, nosso projeto de residência tecnológica oferece não apenas conhecimento teórico, mas também experiências reais. Nossa missão é clara: fortalecer a força de trabalho de TIC na Bahia, promovendo o empreendedorismo e a inovação. Venha fazer parte dessa jornada e elevar sua carreira para novos patamares!</p>
- 
+      <p>No coração da inovação baiana, com uma abordagem única e focada na prática, nosso projeto de residência
+        tecnológica oferece não apenas conhecimento teórico, mas também experiências reais. Nossa missão é clara:
+        fortalecer a força de trabalho de TIC na Bahia, promovendo o empreendedorismo e a inovação. Venha fazer parte
+        dessa jornada e elevar sua carreira para novos patamares!</p>
+
       <a href="https://restic36.cepedi.org.br/">Clique aqui</a> e visite nosso site!
     </div>
-    <h5>Lista de Cursos </h5>
-    <b>Full-Stack</b>
-      <p>Construa o futuro da web! Aprenda a desenvolver aplicações completas, 
-        desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!</p>
+    <p>Vantagens dos nossos cursos</p>
+    <ul>
+      <li> Professores capacitados </li>
+      <li> Conteúdo atualizado </li>
+      <li> Aulas síncronas (remotas) </li>
+      <li> Material de leitura, atividades e material complementar </li>
+    </ul>
+    <p>Conheça nossos cursos.</p>
+    <table border=1>
+      <caption>Lista de Cursos</caption>
+      <thead>
+        <th>Curso</th>
+        <th>Descrição</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Full-Stack</td>
+          <td>Construa o futuro da web! Aprenda a desenvolver aplicações completas,
+            desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!</td>
+        </tr>
+        <tr>
+          <td>Ciência de Dados</td>
+          <td>
+            Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e
+            impulsionar
+            decisões inteligentes com nossa trilha de Ciência de Dados.
+          </td>
+        </tr>
+        <tr>
+          <td>Front-end e UX/UI</td>
+          <td>
+            Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar
+            experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!
+          </td>
+        </tr>
+        <tr>
+          <td>Mobile</td>
+          <td>
+            Empodere-se para o mundo móvel! Desenvolva habilidades para criar aplicativos inovadores que acompanhem o
+            ritmo
+            do estilo de vida atual. Junte-se à nossa trilha de desenvolvimento Mobile.</td>
+        </tr>
+        <tr>
+          <td>Teste</td>
+          <td>
+            Garanta a qualidade em cada linha de código! Descubra as melhores práticas de teste de software e
+            torne-se um
+            especialista em garantia de qualidade com nossa trilha de Teste.</ </td>
+        </tr>
+        <tr>
+          <td>Cloud</td>
+          <td>
+            Alcance as alturas da computação em nuvem! Aprenda a utilizar plataformas de nuvem líderes do setor e
+            aproveite
+            todo o poder da escalabilidade e da flexibilidade. Explore nossa trilha Cloud hoje mesmo!
+          </td>
+        </tr>
+        <tr>
+          <td>Back-end</td>
+          <td>
+            Fortaleça a espinha dorsal da tecnologia! Aprofunde-se nas linguagens e frameworks essenciais para o
+            desenvolvimento de servidores e bancos de dados. Participe de nossa trilha Back-end e construa a base para o
+            futuro digital.
+          </td>
+        </tr>
 
-      <b>Ciência de Dados</b>
-      <p>Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.</p>
+      </tbody>
 
-      <b>Front-end e UX/UI</b>
-      <p>Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!</p>
+    </table>
+    <div id="formulario">
+      <p>Inscreva-se no formulário abaixo para entrarmos em contato</p>
+      <form action="form_submit" method="post">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div class="linha_formulario">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Ex.:João Silva" />
+          </div>
+          <br>
+          <div class="linha_formulario">
+            <label>Telefone</label>
+            <input type="tel" name="telefone" placeholder="(XX) XXXX-XXXX" />
+          </div>
+          <br>
+          <div class="linha_formulario">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="joao@mail.com" />
+          </div>
+          <br>
+          <div class="linha_formulario">
+            <label>Perfil</label>
+            <select name="perfil">
+              <option value="aluno">Aluno</option>
+              <option value="tutor">Tutor</option>
+            </select>
+          </div>
+          <div class="linha_formulario">
+            <label>Comentário (opcional)</label>
+            <br>
+            <textarea name="comentario" placeholder="Escreva aqui algum comentário adicional"></textarea>
+          </div>
+        </fieldset>
+        <input type="submit" value="Enviar" />
 
-      <b>Mobile</b>
-      <p>Empodere-se para o mundo móvel! Desenvolva habilidades para criar aplicativos inovadores que acompanhem o ritmo do estilo de vida atual. Junte-se à nossa trilha de desenvolvimento Mobile.</p>
+      </form>
+    </div>
 
-      <b>Teste</b>
-      <p>Garanta a qualidade em cada linha de código! Descubra as melhores práticas de teste de software e torne-se um especialista em garantia de qualidade com nossa trilha de Teste.</p>
+  </div>
 
-      <b>Cloud</b>
-      <p>Alcance as alturas da computação em nuvem! Aprenda a utilizar plataformas de nuvem líderes do setor e aproveite todo o poder da escalabilidade e da flexibilidade. Explore nossa trilha Cloud hoje mesmo!</p>
 
-      <b>Back-end</b>
-      <p>Fortaleça a espinha dorsal da tecnologia! Aprofunde-se nas linguagens e frameworks essenciais para o desenvolvimento de servidores e bancos de dados. Participe de nossa trilha Back-end e construa a base para o futuro digital.</p>   
-   </div>
 
-   <div id="footer">
-      <h6>Todos os direitos reservador para Restic36</h6>
-   </div>
-  </body>
+
+
+
+
+
+
+
+  <div id="footer">
+    <h6>Todos os direitos reservador para Restic36</h6>
+  </div>
+</body>
+
 </html>
-
