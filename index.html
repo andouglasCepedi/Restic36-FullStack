@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="estilo.css"/>
+  <link rel="stylesheet" type="text/css" href="estilo.css" />
   <title>Tags HTML</title>
 </head>
 
@@ -14,10 +14,11 @@
 
   <div id="content">
     <div id="description">
-      <p>No coração da inovação baiana, com uma abordagem única e focada na prática, nosso projeto de residência
-        tecnológica oferece não apenas conhecimento teórico, mas também experiências reais. Nossa missão é clara:
-        fortalecer a força de trabalho de TIC na Bahia, promovendo o empreendedorismo e a inovação. Venha fazer parte
-        dessa jornada e elevar sua carreira para novos patamares!</p>
+      No coração da inovação baiana, com uma abordagem única e focada na prática, nosso projeto de residência
+      tecnológica oferece não apenas conhecimento teórico, mas também experiências reais. Nossa missão é clara:
+      fortalecer a força de trabalho de TIC na Bahia, promovendo o empreendedorismo e a inovação. Venha fazer parte
+      dessa jornada e elevar sua carreira para novos patamares!
+      <br><br>
 
       <a href="https://restic36.cepedi.org.br/">Clique aqui</a> e visite nosso site!
 
@@ -31,10 +32,9 @@
     </div>
     <div id="cursos">
       <p>Conheça nossos cursos.</p>
-      <table border=1>
-        <caption>Lista de Cursos</caption>
+      <table>
         <thead>
-          <th>Curso</th>
+          <th style="width: 100px;">Curso</th>
           <th>Descrição</th>
         </thead>
         <tbody>
@@ -43,7 +43,7 @@
             <td>Construa o futuro da web! Aprenda a desenvolver aplicações completas,
               desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!</td>
           </tr>
-          <tr>
+          <tr class="par">
             <td>Ciência de Dados</td>
             <td>
               Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e
@@ -58,7 +58,7 @@
               experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!
             </td>
           </tr>
-          <tr>
+          <tr class="par">
             <td>Mobile</td>
             <td>
               Empodere-se para o mundo móvel! Desenvolva habilidades para criar aplicativos inovadores que acompanhem o
@@ -72,7 +72,7 @@
               torne-se um
               especialista em garantia de qualidade com nossa trilha de Teste. </td>
           </tr>
-          <tr>
+          <tr class="par">
             <td>Cloud</td>
             <td>
               Alcance as alturas da computação em nuvem! Aprenda a utilizar plataformas de nuvem líderes do setor e
@@ -96,36 +96,35 @@
     <div id="formulario">
       <p>Inscreva-se no formulário abaixo para entrarmos em contato</p>
       <form action="form_submit" method="post">
-        <fieldset>
-          <legend>Dados Pessoais</legend>
-          <div class="linha_formulario">
-            <label>Nome</label>
-            <input type="text" name="name" placeholder="Ex.:João Silva" />
-          </div>
+
+        <div class="linha_formulario">
+          <label>Nome</label>
+          <input type="text" name="name" placeholder="Ex.:João Silva" />
+        </div>
+        <br>
+        <div class="linha_formulario">
+          <label>Telefone</label>
+          <input type="tel" name="telefone" placeholder="(XX) XXXX-XXXX" />
+        </div>
+        <br>
+        <div class="linha_formulario">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="joao@mail.com" />
+        </div>
+        <br>
+        <div class="linha_formulario">
+          <label>Perfil</label>
+          <select name="perfil">
+            <option value="aluno">Aluno</option>
+            <option value="tutor">Tutor</option>
+          </select>
+        </div>
+        <div class="linha_formulario">
+          <label>Comentário (opcional)</label>
           <br>
-          <div class="linha_formulario">
-            <label>Telefone</label>
-            <input type="tel" name="telefone" placeholder="(XX) XXXX-XXXX" />
-          </div>
-          <br>
-          <div class="linha_formulario">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="joao@mail.com" />
-          </div>
-          <br>
-          <div class="linha_formulario">
-            <label>Perfil</label>
-            <select name="perfil">
-              <option value="aluno">Aluno</option>
-              <option value="tutor">Tutor</option>
-            </select>
-          </div>
-          <div class="linha_formulario">
-            <label>Comentário (opcional)</label>
-            <br>
-            <textarea name="comentario" placeholder="Escreva aqui algum comentário adicional"></textarea>
-          </div>
-        </fieldset>
+          <textarea name="comentario" placeholder="Escreva aqui algum comentário adicional"></textarea>
+        </div>
+
         <input type="submit" value="Enviar" />
 
       </form>
