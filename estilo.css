@@ -1,39 +1,19 @@
+/*Exemplo de estilo na tag principal*/
 body{
- 
-
-#description{
-    background-color: #7fffd4;
+    background-color: azure;
 }
 
-.linha_formulario{
-    background-color: #ffe4c4;
-}
-
-#texto_estilizado {
-    font-size: 25;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-style: italic;
+/*Exemplo de estilo em tag específica*/
+header{
     text-align: center;
-    color: chocolate;
-    height: 200px;
-    margin: 20px;
-    padding: 50px;
 }
 
-@media (condição) {
-
-  	/* Regras CSS que serão aplicadas quando a condição for verdadeira */
-
+/*Exemplo de estilo pelo ID*/
+#description{
+    background-color: aqua;    
 }
 
-.conteudo{
-       width: 1024px;
+/*Exemplo de estilo pelo class*/
+.linha_formulario{
+    background-color: aquamarine;    
 }
-
-@media(max-width: 768px){
-       .conteudo{
-              width: 720px;
-       }
-}
-
