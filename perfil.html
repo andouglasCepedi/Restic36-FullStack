@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilo.css" />
+  <title>Curso Restic36 - Perfil</title>
+  <style>
+    #cursos_perfil {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20;
+    }
+
+    .card_curso_perfil {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      border-radius: 0 0 15px 15px;
+      position: relative;
+      margin: 5;
+    }
+
+    .card-link-perfil {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1;
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+    }
+
+    .card_curso .titulo {
+      font-size: large;
+    }
+
+    .card_texto_perfil {
+      padding: 0 20;
+      background-color: rgb(239, 231, 246);
+      border-radius: 15px 15px 15px 15px;
+      border: 1px solid blueviolet;
+      width: 300px;
+
+    }
+
+    .card_descricao {
+      font-size: medium;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Elemento de Topo -->
+  <header>
+    <img src="src/images/logo-nav.png">
+  </header>
+
+  <div id="content">
+    <div id="description">
+      <img src="src/images/painel.png" width="300" height="300">
+      <div class="card_principal">
+        <p class="titulo" id="username">Seja bem-vindo,{Nome}
+        </p>
+        <p class="texto-normal">No coração da inovação baiana, com uma abordagem única e focada na prática, nosso
+          projeto de residência
+          tecnológica oferece não apenas conhecimento teórico, mas também experiências reais. Nossa missão é clara:
+          fortalecer a força de trabalho de TIC na Bahia, promovendo o empreendedorismo e a inovação. <b> Continue sua
+            jornada de aprendizado! </b>
+        </p>
+      </div>
+      <br><br>
+    </div>
+    <p class="titulo">Seus cursos em andamento...</p>
+    <div id="cursos_perfil">
+      
+    </div>
+  </div>
+
+  <div id="footer">
+    <h6>Todos os direitos reservador para Restic36</h6>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
