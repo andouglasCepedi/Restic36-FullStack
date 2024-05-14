@@ -1,11 +1,68 @@
-/*Exemplo de estilo na tag principal*/
+/* Media query para dispositivos com largura de tela menor que 480px */
+@media only screen and (max-width: 479px) {
+    #content {
+        margin: 10 20;
+    }
+
+    header img {
+        width: 90%;
+    }
+
+    #description {
+        flex-wrap: wrap-reverse;
+    }
+
+    .card_curso {
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    .image_card {
+        width: 300px;
+    }
+
+    .card_img {
+        width: 300px;
+    }
+
+}
+
+/* Media query para dispositivos com largura de tela entre 480px e 900px */
+@media only screen and (min-width: 480px) and (max-width: 900px) {
+    #content {
+        margin: 10 20;
+    }
+
+    header img {
+        width: 90%;
+    }
+
+    #description {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+/* Media query para dispositivos com largura de tela maior que 901px */
+@media only screen and (min-width: 901px) {
+    #content {
+        margin: 10 20;
+    }
+
+    header img {
+        width: 600px;
+    }
+}
+
+
 body {
     background-color: azure;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-/*Exemplo de estilo em tag específica*/
+
 header {
     display: flex;
     justify-content: center;
@@ -20,17 +77,17 @@ header {
 #content {
     padding: 0 30 0 30;
     font-size: x-small;
-    margin: 10 200;
 }
 
 
-/*Exemplo de estilo pelo ID*/
 #description {
     display: flex;
+    justify-content: center;
     margin: 0 10 0 10;
     padding: 10;
     text-align: justify;
     font-size: large;
+
 }
 
 .titulo {
@@ -64,7 +121,7 @@ header {
     top: 0;
     bottom: 0;
     left: -1;
-    width:100%;
+    width: 100%;
     border-radius: 0 0 15px 15px;
 }
 
@@ -84,26 +141,25 @@ header {
     font-size: medium;
 }
 
-.card_img {}
+.card_img img {
+    width: 400px;
+}
 
-/*Exemplo de estilo pelo ID*/
 #description li {
     margin: 10 10 0 10;
     padding: 2;
     text-align: justify;
 }
 
-/* Estilo da div do forms */
 #formulario {
     padding: 10;
 }
 
-/*Exemplo de estilo pelo class*/
 .linha_formulario {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 500px;
+    width: 400px;
     margin: 10 0 0 50;
 
 }
