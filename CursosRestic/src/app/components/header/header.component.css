@@ -1,0 +1,6 @@
+header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid blueviolet;
+    background-color: rgb(238, 220, 255);
+}

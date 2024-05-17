@@ -1,0 +1,14 @@
+.description {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 50px 0px 50px;
+    text-align: justify;
+    font-size: large;
+}
+
+.card-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
