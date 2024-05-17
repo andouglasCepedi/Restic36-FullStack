@@ -28,6 +28,10 @@ export class CursoService {
     }
   ];
 
+  constructor() {
+
+  }
+
   getAllCursos(): Curso[] {
     return this.cursosList;
   }
@@ -36,7 +40,8 @@ export class CursoService {
     return this.cursosList.find(curso => curso.id === id);
   }
 
-  constructor() {
-
+  submitInscricao(name: string, email: string, phone: string ){
+    console.log(name, email, phone);
   }
+  
 }

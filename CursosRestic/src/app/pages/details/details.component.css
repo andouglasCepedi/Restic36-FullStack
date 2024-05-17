@@ -41,4 +41,27 @@
     width: 400px;
 }
 
+/*Forms*/
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input{
+    border-radius: 3px;
+    border-color: rgb(192, 141, 239);
+    height: 40px;
+    width: 300px;
+    outline: 0;
+    font-size: x-large;
+}
+
+
+.primary {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
 

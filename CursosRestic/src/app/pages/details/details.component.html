@@ -16,7 +16,19 @@
         </section>
     </section>
 </section>
-<section class="objetivos">
-    <h4 class="titulo">O que você vai aprender?</h4>
-    <app-item *ngFor="let item of curso!.items" [itemData]="item"></app-item>
+<section class="forms">
+    <h4 class="titulo">Inscreva-se</h4>
+    <form [formGroup]="applyForm" class="form" (submit)="submitInscricao()">
+        <label for="name">Nome</label>
+        <input id="name" type="text" formControlName="name">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email">
+
+        <label for="phone">Telefone</label>
+        <input id="phone" type="tel" formControlName="phone">
+
+        <button type="submit" class="primary">Enviar</button>
+    </form>
+    
 </section>
