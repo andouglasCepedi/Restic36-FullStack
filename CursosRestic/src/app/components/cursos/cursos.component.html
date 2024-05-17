@@ -1,43 +1,4 @@
 <p class="titulo">Conheça nossos cursos.</p>
-    <div id="cursos">
-
-      <div class="card_curso">
-      <a href="#" class='card-link'></a>
-        <div class="card_img">
-          <img src="../../../assets/images/card-fullstack.png" width="400px" />
-        </div>
-        <div class="card_texto">
-          <p class="titulo">Full-Stack</p>
-          <p class="card_descricao">Construa o futuro da web! Aprenda a desenvolver aplicações completas,
-            desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!</p>
-        </div>
-      </div>
-
-      <div class="card_curso">
-      <a href="#" class='card-link'></a>
-        <div class="card_img">
-          <img src="../../../assets/images/card-dados.png" width="400px" />
-        </div>
-        <div class="card_texto">
-          <p class="titulo">Ciência de Dados</p>
-          <p class="card_descricao">Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver
-            modelos preditivos e
-            impulsionar
-            decisões inteligentes com nossa trilha de Ciência de Dados.</p>
-        </div>
-      </div>
-
-      <div class="card_curso">
-      <a href="#" class='card-link'></a>
-        <div class="card_img">
-          <img src="../../../assets/images/card-frontend.png" width="400px" />
-        </div>
-        <div class="card_texto">
-          <p class="titulo">Front-end e UX/UI</p>
-          <p class="card_descricao">Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento
-            front-end para criar
-            experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!</p>
-        </div>
-      </div>
-    </div>
-
+<section id="cursos">
+  <app-curso *ngFor="let curso of cursosList" [cursoData]="curso"></app-curso>
+</section>

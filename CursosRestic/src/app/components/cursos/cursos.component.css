@@ -5,39 +5,3 @@
     justify-content: space-around;
 }
 
-.card_curso {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    width: 400px;
-    border: 1px solid;
-    border-radius: 0 0 15px 15px;
-    margin-top: 10px;
-    position: relative;
-}
-
-.card-link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -1;
-    width:100%;
-    border-radius: 0 0 15px 15px;
-}
-
-.card_curso .titulo {
-    font-size: x-large;
-}
-
-.card_texto {
-    margin-top: -30;
-    padding: 0px 20px 10px 30px;
-    background-color: rgb(239, 231, 246);
-    border-radius: 0 0 15px 15px;
-    border-top: 1px solid blueviolet;
-}
-
-.card_descricao {
-    font-size: medium;
-    height: max-content;
-}
