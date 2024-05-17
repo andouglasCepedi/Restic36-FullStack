@@ -42,35 +42,3 @@
 }
 
 
-/* Itens */
-.itens{
-    display: flex;
-    flex-direction: column;
-}
-
-.item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.item-number{
-    border: 1px solid blueviolet;
-    padding-top: 15px;
-    width: 55px;
-    height: 40px;
-    text-align: center;
-    font-size: large;
-    justify-content: center;
-    background-color: white;
-    border-radius: 15px 0px 0px 15px;
-}
-
-.item-text{
-    padding: 15px 0 0 15px;
-    width: 500px;
-    height: 40px;
-    background-color:  rgb(240, 231, 248);
-    border: 1px solid blueviolet;
-    border-radius: 0 15px 15px 0;
-}

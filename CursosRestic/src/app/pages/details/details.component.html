@@ -18,30 +18,5 @@
 </section>
 <section class="objetivos">
     <h4 class="titulo">O que você vai aprender?</h4>
-    <section class="itens">
-        <section class='item'>
-            <p class="item-number">1</p>
-            <p class="item-text">Desenvolver aplicação web completa</p>
-        </section>
-        <section class='item'>
-            <p class="item-number">2</p>
-            <p class="item-text">Angular para o front-end</p>
-        </section>
-        <section class='item'>
-            <p class="item-number">3</p>
-            <p class="item-text">.NET para o back-end</p>
-        </section>
-        <section class='item'>
-            <p class="item-number">4</p>
-            <p class="item-text">Ferramentas como Github e Docker</p>
-        </section>
-        <section class='item'>
-            <p class="item-number">5</p>
-            <p class="item-text">Projeto e implementação de banco de dados com ORM</p>
-        </section>
-        <section class='item'>
-            <p class="item-number">5</p>
-            <p class="item-text">Deploy e manutenção</p>
-        </section>
-    </section>
+    <app-item *ngFor="let item of curso!.items" [itemData]="item"></app-item>
 </section>

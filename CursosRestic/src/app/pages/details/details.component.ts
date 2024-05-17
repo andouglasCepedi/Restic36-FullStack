@@ -2,11 +2,14 @@ import { Component, inject } from '@angular/core';
 import { Curso } from '../../interfaces/curso';
 import { ActivatedRoute } from '@angular/router';
 import { CursoService } from '../../services/curso.service';
+import { ItemComponent } from '../../components/item/item.component';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [],
+  imports: [ItemComponent, CommonModule],
   templateUrl: 'details.component.html' ,
   styleUrl: './details.component.css'
 })

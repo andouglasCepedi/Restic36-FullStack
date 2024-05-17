@@ -15,14 +15,14 @@ export class CursoService {
       image: "../../../assets/images/card-fullstack.png",
       professor: ["Andouglas", "Thiago"],
       cargaHoraria: 300,
-      items: []
+      items: ["Desenvolver Aplicação web completa.", "Angular para o front-end.", ".NET para o back-end.", "Github e Docker", "Projeto e implementação de banco de dados com ORM", "Deploy e manutenção"]
     },
     {
       id: 2,
       name: "Ciência de Dados",
       description: "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
       image: "../../../assets/images/card-dados.png",
-      professor: ["", ""],
+      professor: ["Ciro","Aluizio"],
       cargaHoraria: 250,
       items: []
     }
