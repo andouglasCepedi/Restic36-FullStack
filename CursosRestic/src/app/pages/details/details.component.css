@@ -1,0 +1,76 @@
+/*detalhes*/
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.label{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.label-texto{
+    font-size: medium;
+    font-weight: 800;
+    padding: 5px;
+    width: 20%;    
+}
+
+.titulo-normal{
+    font-size: medium;
+    font-weight: 400;
+    padding: 5px;
+    width: 80%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    border-top: 1px solid blueviolet;
+    border-right: 1px solid blueviolet;
+    border-bottom: 1px solid blueviolet;
+    background-color: rgb(240, 231, 248);
+    border-radius: 0 15px 15px 0;
+}
+
+.image{
+    border: 1px solid blueviolet;
+    width: 400px;
+}
+
+
+/* Itens */
+.itens{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-number{
+    border: 1px solid blueviolet;
+    padding-top: 15px;
+    width: 55px;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.item-text{
+    padding: 15px 0 0 15px;
+    width: 500px;
+    height: 40px;
+    background-color:  rgb(240, 231, 248);
+    border: 1px solid blueviolet;
+    border-radius: 0 15px 15px 0;
+}

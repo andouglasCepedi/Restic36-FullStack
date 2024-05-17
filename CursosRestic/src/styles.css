@@ -13,4 +13,7 @@ body{
 
 .titulo-normal{
     font-size: medium;
+    font-weight: 400;
+    padding: 5px;
 }
+

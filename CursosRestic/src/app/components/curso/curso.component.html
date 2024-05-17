@@ -3,5 +3,6 @@
     <section class="card-texto">
         <p class="titulo">{{cursoData.name}}</p>
         <p class="card_descricao">{{cursoData.description}}</p>
+        <a [routerLink]="['/details', cursoData.id]">Saiba mais +</a>
     </section>
 </section>
