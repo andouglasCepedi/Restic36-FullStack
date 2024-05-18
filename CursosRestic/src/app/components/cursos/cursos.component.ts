@@ -16,6 +16,8 @@ export class CursosComponent {
   cursoService: CursoService = inject(CursoService);
 
   constructor(){
-    this.cursosList = this.cursoService.getAllCursos();
+    this.cursoService.getAllCursos().then((cursosList: Curso[]) => {
+      this.cursosList = cursosList;
+    })
   }
 }

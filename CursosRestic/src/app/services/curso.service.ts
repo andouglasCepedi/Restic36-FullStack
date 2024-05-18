@@ -6,38 +6,19 @@ import { Curso } from '../interfaces/curso';
 })
 export class CursoService {
 
-
-  protected cursosList: Curso[] = [
-    {
-      id: 1,
-      name: "Full-Stack",
-      description: "Construa o futuro da web! Aprenda a desenvolver aplicações completas, desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!",
-      image: "../../../assets/images/card-fullstack.png",
-      professor: ["Andouglas", "Thiago"],
-      cargaHoraria: 300,
-      items: ["Desenvolver Aplicação web completa.", "Angular para o front-end.", ".NET para o back-end.", "Github e Docker", "Projeto e implementação de banco de dados com ORM", "Deploy e manutenção"]
-    },
-    {
-      id: 2,
-      name: "Ciência de Dados",
-      description: "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
-      image: "../../../assets/images/card-dados.png",
-      professor: ["Ciro","Aluizio"],
-      cargaHoraria: 250,
-      items: []
-    }
-  ];
-
+  url = 'http://localhost:3000/cursos';
   constructor() {
 
   }
 
-  getAllCursos(): Curso[] {
-    return this.cursosList;
-  }
+  async getAllCursos(): Promise<Curso[]> {
+    const data = await fetch(this.url);
+    return data.json() ?? [];
+  };
 
-  getCursoById(id: Number): Curso | undefined {
-    return this.cursosList.find(curso => curso.id === id);
+  async getCursoById(id: Number): Promise<Curso | undefined> {
+    const data = await fetch(`${this.url}/${id}`);
+    return data.json() ?? {};
   }
 
   submitInscricao(name: string, email: string, phone: string ){

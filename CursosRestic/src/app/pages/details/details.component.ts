@@ -30,7 +30,9 @@ export class DetailsComponent {
 
   constructor() {
     const cursoId = Number(this.route.snapshot.params['id']);
-    this.curso = this.cursoService.getCursoById(cursoId);
+    this.cursoService.getCursoById(cursoId).then((curso) => {
+      this.curso = curso;
+    })
   }
 
   submitInscricao(){
