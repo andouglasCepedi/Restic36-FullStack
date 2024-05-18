@@ -1,0 +1,47 @@
+{
+  "cursos": [
+    {
+      "id": "1",
+      "name": "Full-Stack",
+      "description": "Construa o futuro da web! Aprenda a desenvolver aplicações completas, desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!",
+      "image": "../../../assets/images/card-fullstack.png",
+      "professor": [
+        "Andouglas",
+        "Thiago"
+      ],
+      "cargaHoraria": 300,
+      "items": [
+        "Desenvolver Aplicação web completa.",
+        "Angular para o front-end.",
+        ".NET para o back-end.",
+        "Github e Docker",
+        "Projeto e implementação de banco de dados com ORM",
+        "Deploy e manutenção"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Ciência de Dados",
+      "description": "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
+      "image": "../../../assets/images/card-dados.png",
+      "professor": [
+        "Ciro",
+        "Aluisio"
+      ],
+      "cargaHoraria": 250,
+      "items": []
+    },
+    {
+      "id": "3",
+      "name": "Front-end e UX/UI",
+      "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
+      "image": "../../../assets/images/card-frontend.png",
+      "professor": [
+        "João",
+        "Paulo"
+      ],
+      "cargaHoraria": 280,
+      "items": []
+    }
+  ]
+}
