@@ -1,0 +1,68 @@
+### Requisição GET
+GET http://localhost:3000/cursos HTTP/1.1
+Content-Type: application/json
+
+### Requisição GET com parâmetros
+GET http://localhost:3000/cursos/3 HTTP/1.1
+Content-Type: application/json
+
+### Requisição POST
+POST http://localhost:3000/cursos/
+Content-Type: application/json
+
+{
+    "id":"3",
+    "name": "Front-end e UX/UI",
+    "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
+    "image": "../../../assets/images/card-frontend.png",
+    "professor": [
+        "João",
+        "Paulo"
+    ],
+    "cargaHoraria": 280,
+    "items": []
+}
+
+### Requisição de Alteração de dados (PUT)
+PUT http://localhost:3000/cursos/3
+Content-Type: application/json
+
+{
+    "id":"3",
+    "name": "Front-end e UX/UI",
+    "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
+    "image": "../../../assets/images/card-frontend.png",
+    "professor": [
+        "João",
+        "Paulo"
+    ],
+    "cargaHoraria": 280,
+    "items": ["Aprenda a desenvolver aplicações frontend usando Angular."]
+}
+
+### Requisição de Alteração de dados de apenas um curso (PUT)
+PATCH http://localhost:3000/cursos/3
+Content-Type: application/json
+
+{
+    "professor": [
+        "Maria",
+        "Paulo"
+    ]
+}
+
+### Excluir um curso
+DELETE http://localhost:3000/cursos/3
+Content-Type: application/json
+
+### Filtros 
+GET http://localhost:3000/cursos?name=Full-Stack HTTP/1.1
+Content-Type: application/json
+
+### Paginação
+GET http://localhost:3000/cursos/?_page=1&_limit=2 HTTP/1.1
+Content-Type: application/json
+
+###Ordenação
+GET http://localhost:3000/cursos/?_sort=name&_order=desc HTTP/1.1
+Content-Type: application/json
