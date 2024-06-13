@@ -1,4 +1,4 @@
-![alt text](src/images/logo-nav.png)
+<img src="src/images/logo-nav.png" width="250px">
 
 ---
 
