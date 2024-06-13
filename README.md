@@ -1,4 +1,6 @@
+<div align="center">
 <img src="src/images/logo-nav.png" width="400px">
+</div>
 
 ---
 
@@ -36,6 +38,6 @@ Adicione novos dados a tabela e novos campos ao formulário, tentando entender c
 
 
 ### :triangular_flag_on_post: Licença
-<p style={font-size: 10px} >
+<p>
 Todos os direitos reservados para Restic36 (Residência em Software: Bahia + Tecnologia + Empreendedorismo)
 </p>
