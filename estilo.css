@@ -1,0 +1,96 @@
+/*Exemplo de estilo na tag principal*/
+body{
+    background-color: azure;
+    margin: 0;
+}
+
+#content{
+    padding: 0 30 0 30;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+}
+
+/*Exemplo de estilo em tag específica*/
+header{
+    text-align: center;
+}
+
+/*Exemplo de estilo pelo ID*/
+#description{
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 0 10 0 10; 
+    padding: 10;
+    text-align: justify;
+    background-color: rgb(180, 193, 206);
+
+}
+
+/*Exemplo de estilo pelo ID*/
+#description li{
+    margin: 10 10 0 10; 
+    padding: 2;
+    text-align: justify;
+}
+
+/*Estilo da tabela*/
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+}
+
+table caption{
+    text-align: left;
+}
+
+table thead{
+    background-color: blueviolet;
+    color: white;
+}
+
+table .par{
+    background-color: rgb(205, 191, 218);
+}
+
+tbody td{
+    padding: 4;
+    text-align: center;
+}
+
+/* Estilo da div do forms */
+#formulario{
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid blueviolet;
+    padding: 10;
+    text-align: center;
+}
+
+#formulario p{
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*Exemplo de estilo pelo class*/
+.linha_formulario{
+    padding: 5;
+    text-align: center;
+
+}
+
+input, select, textarea{
+    border-radius: 3px;
+    border-color: rgb(141, 42, 234);
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+}
+
+/*footer*/
+#footer{
+    border-top:1px solid blueviolet;
+    background-color: white;
+    margin: 20 0 0 0;
+    text-align: center;
+    padding: 1;
+}
