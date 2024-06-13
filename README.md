@@ -6,7 +6,7 @@
 
 ## Trilha FullStack
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATS&message=EM_DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM_DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 Seja bem-vindo (a) ao repositório da trilha de Fullstack do Restic36 - Parte 1 (Frontend)!
 
