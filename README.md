@@ -1,4 +1,4 @@
-<img src="src/images/logo-nav.png" width="250px">
+<img src="src/images/logo-nav.png" width="400px">
 
 ---
 
