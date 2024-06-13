@@ -4,7 +4,7 @@
 
 ---
 
-## Trilha FullStack- Unidade I (HTML/CSS)
+## Trilha FullStack- Unidade I (HTML/CSS) - Prática 2
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Linguagem&message=HTML&color=GREEN&style=for-the-badge)
 
