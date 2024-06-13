@@ -2,14 +2,10 @@
 
 ---
 
-# Restic36 - Trilha FullStack
+## Trilha FullStack- Unidade I (HTML/CSS)
 
-<h4 align="right">
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Linguagem&message=HTML&color=GREEN&style=for-the-badge)
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=VERSÃO&message=FINAL&color=GREEN&style=for-the-badge)
-</h4>
-
-## Frontend - Unidade I (HTML/CSS)
 
 Nesta branch você vai encontrar um exemplo abordando os seguintes itens
 
@@ -18,7 +14,7 @@ Nesta branch você vai encontrar um exemplo abordando os seguintes itens
   
 Para visualizar basta abrir o arquivo direto no navegador. Se estiver usando o <b>vsCode</b> como IDE, pode usar alguma extensão de <em> Live Server </em>.
 
-## :bookmark_tabs: Descrição
+### :bookmark_tabs: Descrição
 
 Template básico com utilização das seguintes tags:
 - ```<title>```
@@ -30,11 +26,12 @@ Template básico com utilização das seguintes tags:
 - ```<footer>```
 - ```<p>```
 
-## :hammer: Mãos a Obra
+### :hammer: Mãos a Obra
 
 Altere esse código como desejar, adicionandos outras multimídias, informações, divisões, etc.
 
----
-<p align="center">
+
+### :triangular_flag_on_post: Licença
+<p style={font-size: 10px} >
 Todos os direitos reservados para Restic36 (Residência em Software: Bahia + Tecnologia + Empreendedorismo)
 </p>
