@@ -1,21 +1,22 @@
-/*Exemplo de estilo na tag principal*/
+/* Estilo do corpo do documento */
 body{
     background-color: azure;
     margin: 0;
 }
 
+/* Estilo do topo da página */
+header{
+    text-align: center;
+}
+
+/* Estilo adicionado a div content */
 #content{
     padding: 0 30 0 30;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-small;
 }
 
-/*Exemplo de estilo em tag específica*/
-header{
-    text-align: center;
-}
-
-/*Exemplo de estilo pelo ID*/
+/* Estilo adicionado a div description */
 #description{
     border: 1px solid;
     border-radius: 15px;
@@ -26,7 +27,7 @@ header{
 
 }
 
-/*Exemplo de estilo pelo ID*/
+/* Estilo adicionao ao componente li somente da div description */
 #description li{
     margin: 10 10 0 10; 
     padding: 2;
@@ -71,7 +72,6 @@ tbody td{
     font-weight: bolder;
 }
 
-/*Exemplo de estilo pelo class*/
 .linha_formulario{
     padding: 5;
     text-align: center;
