@@ -12,7 +12,7 @@
 
 Nesta prática vamos realizar testes de requisições HTTP. Para isso, como ainda não temos uma api rodando, vamos usar o <em>'json-server'</em>. Essa biblioteca cria uma API fake que recebe requisições HTTP baseado em um arquivo JSON.
 
-### :hammer: Instalação das Ferramentas
+### :wrench: Instalação das Ferramentas
 
 1. <em>json-server</em>
    
@@ -29,49 +29,156 @@ Nesta prática vamos realizar testes de requisições HTTP. Para isso, como aind
 
     ![REST Client](image.png)
 
-### :hammer: Utilização
+### :page_facing_up: Utilização
 
-```javascript
-function createCard(data) {
-    const card = document.createElement('div');
-    card.classList.add('card_curso_perfil');
+Uma vez instalado o <em>json-server</em>, podemos criar um banco de dados fictício em um arquivo json (db.json) como mostrado a seguir.
 
-    const card_perfil = document.createElement('div');
-    card_perfil.classList.add('card_texto_perfil');
-    
-    const titulo = document.createElement('p');
-    titulo.textContent = data.titulo;
-    titulo.classList.add('titulo');
-
-    const descricao = document.createElement('p');
-    descricao.textContent = data.descricao;
-    descricao.classList.add('card_descricao');
-
-    card_perfil.appendChild(titulo);
-    card_perfil.appendChild(descricao);
-    card.appendChild(card_perfil);
-
-    return card;
+```json
+{
+  "cursos": [
+    {
+      "id": "1",
+      "name": "Full-Stack",
+      "description": "Construa o futuro da web! Aprenda a desenvolver aplicações completas, desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!",
+      "image": "../../../assets/images/card-fullstack.png",
+      "professor": [
+        "Andouglas",
+        "Thiago"
+      ],
+      "cargaHoraria": 300,
+      "items": [
+        "Desenvolver Aplicação web completa.",
+        "Angular para o front-end.",
+        ".NET para o back-end.",
+        "Github e Docker",
+        "Projeto e implementação de banco de dados com ORM",
+        "Deploy e manutenção"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Ciência de Dados",
+      "description": "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
+      "image": "../../../assets/images/card-dados.png",
+      "professor": [
+        "Ciro",
+        "Aluisio"
+      ],
+      "cargaHoraria": 250,
+      "items": []
+    },
+    {
+      "id": "3",
+      "name": "Front-end e UX/UI",
+      "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
+      "image": "../../../assets/images/card-frontend.png",
+      "professor": [
+        "João",
+        "Paulo"
+      ],
+      "cargaHoraria": 280,
+      "items": []
+    }
+  ]
 }
 ```
-Perceba que a estrutura do card que foi criada é a mesma que já existia no código html, a diferença é uqe precisamos criar cada elemento no código, com os mesmos nomes de id, classes e tags. A idéia é criar elementos pai e adicionar os elementos filhos a ele. Por exemplo, título e descrição são adicionados ao elemento (div) <em>card_perfil</em>. O retorno da função é o card criado.
+Basicamente, temos uma estrutura de dados muito parecida com os dados que usamos na aula de Javascript. Agora, podemos rodar o servidor com o seguinte comando (executado na pasta onde está o arquivo <em>db.json</em>)
 
-Agora, podemos usar essa função para inserir os cards dinamicamente baseado no <code>array</code> cursos. Para isso, usamos um ouvinte (listener) no objeto <em>document</em> que verifica se o conteúdo da página já foi carregado. Por fim, usamos o método forEach para iterar pelo array cursos e chamar a função <em>createCard</em> para cada curso.
-
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-    const cursosContainer = document.getElementById('cursos_perfil');
-
-    cursos.forEach(item =>{
-        const card = createCard(item);
-        cursosContainer.appendChild(card)
-    })
-})
+```shell
+    json-server db.json
 ```
+
+A saída deste comando indica que o servidor foi iniciado na porta 3000. Além disso, apresenta o caminho principal da aplicação (index) os enpoints (que no caso é apenas cursos, já que é baseado no db.json) e o diretório dos arquivos estáticos.
+
+```shell
+JSON Server started on PORT :3000
+Press CTRL-C to stop
+Watching db.json...
+
+♡( ◡‿◡ )
+
+Index:
+http://localhost:3000/
+
+Static files:
+Serving ./public directory if it exists
+
+Endpoints:
+http://localhost:3000/cursos
+
+```
+
+Agora podemos fazer requisições HTTP a esse servidor usando a extensão REST Client. Para isso, criamos uma arquivo com extesão <b>.http</b> ou <b>.rest</b>.
+Vamos a um exemplo da utilização dessa extensão. 
+
+```shell
+GET http://localhost:3000/cursos HTTP/1.1
+Content-Type: application/json
+```
+Automaticamente, um botão <em>"send request"</em> aparece acima da requisição e o retorno é apresentado em uma aba.
+
+```json
+HTTP/1.1 200 OK
+X-Powered-By: tinyhttp
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
+Access-Control-Allow-Headers: content-type
+content-type: application/json
+Date: Fri, 21 Jun 2024 21:44:40 GMT
+Connection: close
+Content-Length: 1459
+
+[
+  {
+    "id": "1",
+    "name": "Full-Stack",
+    "description": "Construa o futuro da web! Aprenda a desenvolver aplicações completas, desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!",
+    "image": "../../../assets/images/card-fullstack.png",
+    "professor": [
+      "Andouglas",
+      "Thiago"
+    ],
+    "cargaHoraria": 300,
+    "items": [
+      "Desenvolver Aplicação web completa.",
+      "Angular para o front-end.",
+      ".NET para o back-end.",
+      "Github e Docker",
+      "Projeto e implementação de banco de dados com ORM",
+      "Deploy e manutenção"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Ciência de Dados",
+    "description": "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
+    "image": "../../../assets/images/card-dados.png",
+    "professor": [
+      "Ciro",
+      "Aluisio"
+    ],
+    "cargaHoraria": 250,
+    "items": []
+  },
+  {
+    "id": "3",
+    "name": "Front-end e UX/UI",
+    "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
+    "image": "../../../assets/images/card-frontend.png",
+    "professor": [
+      "João",
+      "Paulo"
+    ],
+    "cargaHoraria": 280,
+    "items": []
+  }
+]
+```
+Para outros exemplos, abra o arquivo <em>pratica_http.http</em. 
 
 ### :hammer: Mãos a Obra
 
-Altere a estrutura do card, adicionando alguma nova informação, como por exemplo, carga horária do curso. Lembre de adicionar essa informação aos dados cursos. Além disso, adicione novos cursos aos <em>array cursos</em> e veja que ao recarregar a página os dados são inseridos de forma dinâmica na página. 
+Crie outros objetos dentro do arquivo json e faça requisições para a nova endpoint gerada pelo json-server.
 
 ### :triangular_flag_on_post: Licença
 <p>
