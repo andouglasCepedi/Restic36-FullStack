@@ -174,7 +174,7 @@ Content-Length: 1459
   }
 ]
 ```
-Para outros exemplos, abra o arquivo <em>pratica_http.http</em. 
+Para outros exemplos, abra o arquivo <em>pratica_http.http</em>. 
 
 ### :hammer: Mãos a Obra
 
