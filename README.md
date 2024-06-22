@@ -4,181 +4,75 @@
 
 ---
 
-## Trilha FullStack- Unidade IV (HTTP)
+## Trilha FullStack- Unidade V (Angular) - Prática 1
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Tecnologias&message=API_REST|HTTP|JSON&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Tecnologias&message=HTML|CSS|JAVASCRIPT|ANGULAR&color=GREEN&style=for-the-badge)
 
 ### :bookmark_tabs: Descrição
 
-Nesta prática vamos realizar testes de requisições HTTP. Para isso, como ainda não temos uma api rodando, vamos usar o <em>'json-server'</em>. Essa biblioteca cria uma API fake que recebe requisições HTTP baseado em um arquivo JSON.
+Chegamos no centro da primeira parte do nosso curso. Nesta unidade, aprenderemos a usar o framework Angular para criar o <em>frontend</em> da nossa aplicação. Vamos lá!
+
+Nesta primeira prática, aprenderemos a fazer a instalação do angular, usando o npm do node, e como criar e rodar um projeto.
 
 ### :wrench: Instalação das Ferramentas
 
-1. <em>json-server</em>
+1. <em>Node.js</em>
    
-   Para instalar o <em>json-server</em> basta usar o comando
+   Para instalar o <em>node.js</em> basta entrar no link [npm install -g json-server](https://nodejs.org/pt), fazer o download da versão para seu SO e proceder a instalação.
+
+   Caso esteja usando o linux, pode usar os seguintes comandos
 
     
 ```shell
-    npm install -g json-server
+    # installs nvm (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# download and install Node.js (you may need to restart the terminal)
+nvm install 20
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.15.0`
+
+# verifies the right NPM version is in the environment
+npm -v # should print `10.7.0`
 ```
 
-2. Extensão REST Client
+2. Instalação do Angular CLI
 
-    Para fazer as requisições, podemos usar a extensão <b>REST Client</b> do <b>vsCode</b>. Para fazer instalação, basta fazer a instalação da extensão.
+Com o Node.js e npm instalados, podemos proceder com a instalação do Angular CLI. O Angular CLI é uma ferramenta de linha de comando que facilita a criação, compilação e execução de aplicativos Angular. Para instalar o Angular CLI globalmente, execute o seguinte comando:
 
-    ![REST Client](image.png)
+```shell
+npm install -g @angular/cli
+```
+3. Instalação da Extensão do vsCode
+
+Para ajudar no desenvolvimento de aplicações em Angular você pode instalar alguma extensão disponível no vsCode. A extensão oficial é o <b>Angular Language Service</b>.
+
+![Angular Language Service](image.png)
 
 ### :page_facing_up: Utilização
 
-Uma vez instalado o <em>json-server</em>, podemos criar um banco de dados fictício em um arquivo json (db.json) como mostrado a seguir.
-
-```json
-{
-  "cursos": [
-    {
-      "id": "1",
-      "name": "Full-Stack",
-      "description": "Construa o futuro da web! Aprenda a desenvolver aplicações completas, desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!",
-      "image": "../../../assets/images/card-fullstack.png",
-      "professor": [
-        "Andouglas",
-        "Thiago"
-      ],
-      "cargaHoraria": 300,
-      "items": [
-        "Desenvolver Aplicação web completa.",
-        "Angular para o front-end.",
-        ".NET para o back-end.",
-        "Github e Docker",
-        "Projeto e implementação de banco de dados com ORM",
-        "Deploy e manutenção"
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Ciência de Dados",
-      "description": "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
-      "image": "../../../assets/images/card-dados.png",
-      "professor": [
-        "Ciro",
-        "Aluisio"
-      ],
-      "cargaHoraria": 250,
-      "items": []
-    },
-    {
-      "id": "3",
-      "name": "Front-end e UX/UI",
-      "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
-      "image": "../../../assets/images/card-frontend.png",
-      "professor": [
-        "João",
-        "Paulo"
-      ],
-      "cargaHoraria": 280,
-      "items": []
-    }
-  ]
-}
-```
-Basicamente, temos uma estrutura de dados muito parecida com os dados que usamos na aula de Javascript. Agora, podemos rodar o servidor com o seguinte comando (executado na pasta onde está o arquivo <em>db.json</em>)
+Agora podemos criar um novo projeto em Angular. Abra o terminal ou prompt de comando e navegue até o diretório onde deseja criar o projeto. Em seguida, execute o seguinte comando:
 
 ```shell
-    json-server db.json
+ng new nome-do-projeto
 ```
 
-A saída deste comando indica que o servidor foi iniciado na porta 3000. Além disso, apresenta o caminho principal da aplicação (index) os enpoints (que no caso é apenas cursos, já que é baseado no db.json) e o diretório dos arquivos estáticos.
+Substitua "nome-do-projeto" pelo nome desejado para o seu projeto. O Angular CLI criará uma nova pasta com o nome do projeto e configurará a estrutura básica do projeto Angular dentro dela. Durante o processo de criação do projeto, você será solicitado a escolher algumas opções, como o estilo de folha de estilos a ser usado (por exemplo, CSS, SCSS, etc.).
+
+Após criar o projeto Angular, você pode navegar até o diretório do projeto e iniciar o servidor de desenvolvimento com o seguinte comando:
 
 ```shell
-JSON Server started on PORT :3000
-Press CTRL-C to stop
-Watching db.json...
-
-♡( ◡‿◡ )
-
-Index:
-http://localhost:3000/
-
-Static files:
-Serving ./public directory if it exists
-
-Endpoints:
-http://localhost:3000/cursos
-
+cd nome-do-projeto 
+ng serve --open
 ```
+Isso iniciará o servidor de desenvolvimento Angular e abrirá automaticamente o aplicativo em seu navegador padrão (figura abaixo). Qualquer alteração que você fizer nos arquivos do projeto será automaticamente recarregada no navegador, permitindo um processo de desenvolvimento mais eficiente e interativo.
 
-Agora podemos fazer requisições HTTP a esse servidor usando a extensão REST Client. Para isso, criamos uma arquivo com extesão <b>.http</b> ou <b>.rest</b>.
-Vamos a um exemplo da utilização dessa extensão. 
-
-```shell
-GET http://localhost:3000/cursos HTTP/1.1
-Content-Type: application/json
-```
-Automaticamente, um botão <em>"send request"</em> aparece acima da requisição e o retorno é apresentado em uma aba.
-
-```json
-HTTP/1.1 200 OK
-X-Powered-By: tinyhttp
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, HEAD, PUT, PATCH, POST, DELETE
-Access-Control-Allow-Headers: content-type
-content-type: application/json
-Date: Fri, 21 Jun 2024 21:44:40 GMT
-Connection: close
-Content-Length: 1459
-
-[
-  {
-    "id": "1",
-    "name": "Full-Stack",
-    "description": "Construa o futuro da web! Aprenda a desenvolver aplicações completas, desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!",
-    "image": "../../../assets/images/card-fullstack.png",
-    "professor": [
-      "Andouglas",
-      "Thiago"
-    ],
-    "cargaHoraria": 300,
-    "items": [
-      "Desenvolver Aplicação web completa.",
-      "Angular para o front-end.",
-      ".NET para o back-end.",
-      "Github e Docker",
-      "Projeto e implementação de banco de dados com ORM",
-      "Deploy e manutenção"
-    ]
-  },
-  {
-    "id": "2",
-    "name": "Ciência de Dados",
-    "description": "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
-    "image": "../../../assets/images/card-dados.png",
-    "professor": [
-      "Ciro",
-      "Aluisio"
-    ],
-    "cargaHoraria": 250,
-    "items": []
-  },
-  {
-    "id": "3",
-    "name": "Front-end e UX/UI",
-    "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
-    "image": "../../../assets/images/card-frontend.png",
-    "professor": [
-      "João",
-      "Paulo"
-    ],
-    "cargaHoraria": 280,
-    "items": []
-  }
-]
-```
-Para outros exemplos, abra o arquivo <em>pratica_http.http</em>. 
+![alt text](image-1.png)
 
 ### :hammer: Mãos a Obra
 
-Crie outros objetos dentro do arquivo json e faça requisições para a nova endpoint gerada pelo json-server.
+Estude a estrutura do projeto criado. Identifique os arquivos html, css, typescript, etc. Na próxima prática iniciaremos a desenvolver componentes, baseado nessa estrutura.
 
 ### :triangular_flag_on_post: Licença
 <p>
