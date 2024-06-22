@@ -5,8 +5,6 @@ import { Curso } from '../interfaces/curso';
   providedIn: 'root'
 })
 export class CursoService {
-
-
   protected cursosList: Curso[] = [
     {
       id: 1,
