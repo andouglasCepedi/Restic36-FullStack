@@ -28,7 +28,7 @@ Ao rodar o comando acima, 4 arquivos são gerados: um html para o template, um c
   styleUrl: './app.component.css'
 })
 ```
-o selector corresponde ao nome daquele componente para ser usado no html; o standalone consiste em uma flag usada para indicar que o componente não possui dependências externas significativas e pode ser usado independente em diferentes partes de um aplicativo ou até mesmo em aplicativos diferentes; em imports devem ser inseridos os componentes, serviços, diretivas, etc, que serão usadas pelo componente; por fim, os campos templateUrl e styleUrl indicam os arquivos de template e de estilo, respectivamente.
+o <b>selector</b> corresponde ao nome daquele componente para ser usado no html; o <b>standalone</b> consiste em uma flag usada para indicar que o componente não possui dependências externas significativas e pode ser usado independente em diferentes partes de um aplicativo ou até mesmo em aplicativos diferentes; em <b>imports</b> devem ser inseridos os componentes, serviços, diretivas, etc, que serão usadas pelo componente; por fim, os campos <b>templateUrl</b> e <b>tyleUrl</b> indicam os arquivos de template e de estilo, respectivamente.
 
 ### :hammer: Mãos a Obra
 
