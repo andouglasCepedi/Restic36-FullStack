@@ -58,7 +58,7 @@ Agora podemos criar um novo projeto em Angular. Abra o terminal ou prompt de com
 ng new nome-do-projeto
 ```
 
-Substitua "nome-do-projeto" pelo nome desejado para o seu projeto. O Angular CLI criará uma nova pasta com o nome do projeto e configurará a estrutura básica do projeto Angular dentro dela. Durante o processo de criação do projeto, você será solicitado a escolher algumas opções, como o estilo de folha de estilos a ser usado (por exemplo, CSS, SCSS, etc.).
+Substitua "nome-do-projeto" pelo nome desejado para o seu projeto. Para o exemplo que vamos desenvolver durante o curso, nomeamos o nosso projeto como <b>CursosRestic</b>. O Angular CLI criará uma nova pasta com o nome do projeto e configurará a estrutura básica do projeto Angular dentro dela. Durante o processo de criação do projeto, você será solicitado a escolher algumas opções, como o estilo de folha de estilos a ser usado (por exemplo, CSS, SCSS, etc.).
 
 Após criar o projeto Angular, você pode navegar até o diretório do projeto e iniciar o servidor de desenvolvimento com o seguinte comando:
 
@@ -68,7 +68,9 @@ ng serve --open
 ```
 Isso iniciará o servidor de desenvolvimento Angular e abrirá automaticamente o aplicativo em seu navegador padrão (figura abaixo). Qualquer alteração que você fizer nos arquivos do projeto será automaticamente recarregada no navegador, permitindo um processo de desenvolvimento mais eficiente e interativo.
 
+<div align="center">
 ![alt text](image-1.png)
+</div>
 
 ### :hammer: Mãos a Obra
 
