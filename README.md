@@ -68,9 +68,9 @@ ng serve --open
 ```
 Isso iniciará o servidor de desenvolvimento Angular e abrirá automaticamente o aplicativo em seu navegador padrão (figura abaixo). Qualquer alteração que você fizer nos arquivos do projeto será automaticamente recarregada no navegador, permitindo um processo de desenvolvimento mais eficiente e interativo.
 
-<div align="center">
-![alt text](image-1.png)
-</div>
+![Tela inicial de um projeto angular](image-1.png)
+
+
 
 ### :hammer: Mãos a Obra
 
