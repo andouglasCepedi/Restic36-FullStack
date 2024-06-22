@@ -6,11 +6,15 @@
 
 ## Trilha FullStack- Unidade V (Angular) - Prática 1
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Tecnologias&message=HTML|CSS|JAVASCRIPT|ANGULAR&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Tecnologias&message=HTML|CSS|TYPESCRIPT|ANGULAR&color=GREEN&style=for-the-badge)
 
 ### :bookmark_tabs: Descrição
 
 Chegamos no centro da primeira parte do nosso curso. Nesta unidade, aprenderemos a usar o framework Angular para criar o <em>frontend</em> da nossa aplicação. Vamos lá!
+
+#### O que vamos desenvolver?
+
+Uma aplicação de cursos na área de TI baseado no Restic36. Basicamente, a aplicação mostra diferentes cursos em cards, que, quando clicados, mostram uma descrição mais detalhada daquele curso. Além disso, usaremos um formulário para realizar o cadastro de novos cursos.
 
 Nesta primeira prática, aprenderemos a fazer a instalação do angular, usando o npm do node, e como criar e rodar um projeto.
 
