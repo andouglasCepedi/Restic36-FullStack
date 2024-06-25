@@ -28,7 +28,7 @@ Nesta primeira prática, aprenderemos a fazer a instalação do angular, usando 
 
     
 ```shell
-    # installs nvm (Node Version Manager)
+# installs nvm (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 # download and install Node.js (you may need to restart the terminal)
