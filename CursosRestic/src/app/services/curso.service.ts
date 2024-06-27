@@ -12,8 +12,7 @@ export class CursoService {
       description: "Construa o futuro da web! Aprenda a desenvolver aplicações completas, desde o front-end até o back-end, com nossa trilha Full-stack. Seja o arquiteto do digital!",
       image: "../../../assets/images/card-fullstack.png",
       professor: ["Andouglas", "Thiago"],
-      cargaHoraria: 300,
-      items: []
+      cargaHoraria: 300
     },
     {
       id: 2,
@@ -21,8 +20,7 @@ export class CursoService {
       description: "Desvende os segredos dos dados! Aprenda a extrair insights valiosos, desenvolver modelos preditivos e impulsionar decisões inteligentes com nossa trilha de Ciência de Dados.",
       image: "../../../assets/images/card-dados.png",
       professor: ["", ""],
-      cargaHoraria: 250,
-      items: []
+      cargaHoraria: 250
     }
   ];
 
