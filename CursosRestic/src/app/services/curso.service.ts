@@ -7,9 +7,8 @@ import { Curso } from '../interfaces/curso';
 export class CursoService {
 
   url = 'http://localhost:3000/cursos';
-  constructor() {
 
-  }
+  constructor() {}
 
   async getAllCursos(): Promise<Curso[]> {
     const data = await fetch(this.url);
