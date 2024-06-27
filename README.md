@@ -4,70 +4,74 @@
 
 ---
 
-## Trilha FullStack- Unidade V (Angular) - Prática 5
+## Trilha FullStack- Unidade V (Angular) - Prática 6
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Tecnologias&message=HTML|CSS|TYPESCRIPT|ANGULAR&color=GREEN&style=for-the-badge)
 
 ### :bookmark_tabs: Descrição
 
-Avançando na nossa aplicação, nesta prática usaremos o conceito de serviço para adicionar lógica a nossa aplicação, de forma que poderemos injeta-los nos componentes que prentendemos utilizar. 
+Depois de introduzido um serviço na nossa aplicação, nesta prática, vamos aprender como criar um formulário simples. Neste exemplo, usamos um formulário reativo.
 
-No nosso exemplo, adicionamos os nossos dados diretamente no componente Cursos. Vimos na unidade IV, que fazemos requisições a uma API, que nos retorna os dados que queremos utilizar. Nas próximas práticas, simularemos esse comportamento. Por enquanto, adicionaremos a lógica de requisitar os dados ao servidor em um serviço.
+Para se entende melhor, formulários reativos em Angular são uma abordagem alternativa para a criação de formulários, onde a lógica é definida programaticamente no TypeScript usando classes como <em>FormControl</em>, <em>FormGroup</em> e <em>FormBuilder</em>. Essa abordagem é mais adequada para formulários mais complexos e flexíveis, onde é necessário um controle mais granular sobre o estado do formulário e da validação.
 
-Para criar um serviço, usamos
+No template (html) usamos 3 inputs: nome, email e telefone. 
+```html
+<section class="forms">
+    <h4 class="titulo">Inscreva-se</h4>
+    <form [formGroup]="applyForm" class="form" (submit)="submitInscricao()">
+        <label for="name">Nome</label>
+        <input id="name" type="text" formControlName="name">
 
-```shell
-ng generate service nome_do_serviço
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email">
+
+        <label for="phone">Telefone</label>
+        <input id="phone" type="tel" formControlName="phone">
+
+        <button type="submit" class="primary">Enviar</button>
+    </form>
+    
+</section>
 ```
-No caso do nosso exemplo, criamos um serviço chamado curso e criamos dois métodos: um que vai receber todos os dados do curso (getAllCursos()) e um que receberá um curso específico pelo ID (getCursoById(id: Number)).
+
+Perceba que utilizamos uma diretiva chamada <em>formGroup</em> para indicar a variável do nosso formulário reativo. No arquivo <em>details.component.ts</em> observe o seguinte trecho de código
 
 ```typescript
-getAllCursos(): Curso[] {
-    return this.cursosList;
+applyForm = new FormGroup(
+  {
+    name: new FormControl(''),
+    email: new FormControl(''),
+    phone: new FormControl('')
   }
-
-  getCursoById(id: Number): Curso | undefined {
-    return this.cursosList.find(curso => curso.id === id);
-  }
-
+);
 ```
-O primeiro método será usado na página <em>home</em> e o segundo na página </em>details</em>. Perceba que também passamos o <em>array</em> <b>cursosList</b> para os serviço que criamos. Nas próximas práticas, faremos as chamadas a uma api(simulada), diretamente neste serviço.
-
-Para usar o serviço criado, injetamos ele nos componentes. Por exemplo, para usar o método getAllCursos() no componente cursos, fazemos
+As variáveis <em>name, email e phone</em> são usadas para armazenar os dados inseridos no formulário. Além disso, perceba que no template usamos <code>(submit)="submitInscricao()"</code> para indicar o que deve ser feito quando o botão de envio for pressionado. Neste caso, o método que deve ser chamado é o <em>sumitInscricao</em>. Esse método está inserido no serviço que criamos anteriormente e que no nosso caso, apenas mostramos os dados digitados no console. 
 
 ```typescript
-export class CursosComponent {
-  cursosList: Curso[] = [];
-  cursoService: CursoService = inject(CursoService);
-
-  constructor(){
-    this.cursosList = this.cursoService.getAllCursos();
-  }
+submitInscricao(name: string, email: string, phone: string ){
+  console.log(name, email, phone);
 }
 ```
 
-Da mesma forma, usaremos o método getCursoById na página details 
+Por fim, perceba que esse método é chamado diretamente no arquivo <em>details.componente.ts</em> que possui um método com o mesmo nome e utiliza o <em>applyForm</em> para pegar o valor que foi inserido pelo usário no formulário. 
 
 ```typescript
-export class DetailsComponent {
-  route: ActivatedRoute = inject(ActivatedRoute);
-  cursoService: CursoService = inject(CursoService);
-
-  curso: Curso | undefined;
-
-  constructor() {
-      const cursoId = Number(this.route.snapshot.params['id']);
-      this.curso = this.cursoService.getCursoById(cursoId);
-  }
-
-}
+submitInscricao(){
+    this.cursoService.submitInscricao(
+      this.applyForm.value.name ?? '',
+      this.applyForm.value.email ?? '',
+      this.applyForm.value.phone ?? '',
+    )
+  };
 ```
+Não esqueça de importar os módulos no <em>details.component.ts</em> e adicionar o <em> ReactiveFormsModule </em> no "imports" do componente.
 
-Lembre-se de exportar o serviço em cada componente para que ele seja acessível.
-
+```typescript
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+```
 ### :hammer: Mãos a Obra
 
-Crie um método que solicita as informações pelo nome do curso, ao invés da utilização do ID. 
+Adicione novos campos ao formulário, de diferentes tipos. Mostre no console todos os dados inseridos pelo usuário.
 
 ### :triangular_flag_on_post: Licença
 <p>
