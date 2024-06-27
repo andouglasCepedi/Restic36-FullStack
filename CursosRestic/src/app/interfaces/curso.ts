@@ -4,6 +4,5 @@ export interface Curso {
     description: string,
     image: string,
     professor: string[],
-    cargaHoraria: number,
-    items: string[]
+    cargaHoraria: number
 }
