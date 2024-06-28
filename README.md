@@ -18,12 +18,12 @@ O repositório está estruturado da seguinte forma
 
 | Prática | Descrição | Branch|
 |---------|-----------|-------|
-|I  |   Estrutura básica do html (<code>html, head, body</code>) e tags básicas como <code>title, h, div, footer, ul, li, p</code>. |<em>HTML_Pratica_1</em>|
-|II  |   Adição de outras tags como (<code>table e forms</code>), além das tags <code>input, select, option, fieldset, th, td, tr, thead</code> e etc. |<em>HTML_Pratica_2</em>|
-|III  |   Inserção do CSS na página HTML. Análise da tag <code> link </code> e entendimento sobre como adicionar propriedades em elementos ID, class e tags. |<em>HTML_CSS_Pratica_3</em>|
-|IV  |   Inserção de estilo no HTML criado nas práticas iniciais. |<em>HTML_CSS_Pratica_4</em>|
-|V  |  Flexbox Layout |<em>HTML_CSS_Pratica_5</em>|
-|VI  |  Media Queries |<em>HTML_CSS_Pratica_6</em>|
+|I  |   Estrutura básica do html (<code>html, head, body</code>) e tags básicas como <code>title, h, div, footer, ul, li, p</code>. |<em>U1P1_HTML_Pratica_1</em>|
+|II  |   Adição de outras tags como (<code>table e forms</code>), além das tags <code>input, select, option, fieldset, th, td, tr, thead</code> e etc. |<em>U1P2_HTML_Pratica_2</em>|
+|III  |   Inserção do CSS na página HTML. Análise da tag <code> link </code> e entendimento sobre como adicionar propriedades em elementos ID, class e tags. |<em>U1P3_HTML_CSS_Pratica_3</em>|
+|IV  |   Inserção de estilo no HTML criado nas práticas iniciais. |<em>U1P4_HTML_CSS_Pratica_4</em>|
+|V  |  Flexbox Layout |<em>U1P5_HTML_CSS_Pratica_5</em>|
+|VI  |  Media Queries |<em>U1P6_HTML_CSS_Pratica_6</em>|
     
 2. <u>Unidade II - Github</u>
 
@@ -33,27 +33,27 @@ Esta unidade não possui branch específica.
 
 | Prática | Descrição | Branch|
 |---------|-----------|-------|
-|I  | Conceitos básicos do Javascript: variáveis, loop, DOM e funções. |<em>Javascript_Pratica_1</em>|
-|II  | Inserção de código Javascript na aplicação HTML/CSS desenvolvida na unidade I. |<em>Javascript_Pratica_II</em>|
+|I  | Conceitos básicos do Javascript: variáveis, loop, DOM e funções. |<em>U3P1_Javascript_Pratica_1</em>|
+|II  | Inserção de código Javascript na aplicação HTML/CSS desenvolvida na unidade I. |<em>U3P2_Javascript_Pratica_II</em>|
 
 4. Unidade IV - Protocolo HTTP (1 branch)
 
 | Prática | Descrição | Branch|
 |---------|-----------|-------|
-|I  | Chamadas HTTP e <em>json-server</em>.|<em>HTTP_Pratica</em>|
+|I  | Chamadas HTTP e <em>json-server</em>.|<em>U4P1_HTTP_Pratica</em>|
 
 
 1. Unidade V - Angular
 
 | Prática | Descrição | Branch|
 |---------|-----------|-------|
-|I  | Inicialização de novo projeto com <code>ng new</code> e visualização com <code>ng serve</code>.|<em>Angular_Pratica_1</em>|
-|II  | Componentes |<em>Angular_Pratica_2</em>|
-|III  | Diretivas |<em>Angular_Pratica_3</em>|
-|IV  | Roteamento |<em>Angular_Pratica_4</em>|
-|V  | Serviços |<em>Angular_Pratica_5</em>|
-|VI  | Formulários |<em>Angular_Pratica_6</em>|
-|VII  | HTTP |<em>Angular_Pratica_7</em>|
+|I  | Inicialização de novo projeto com <code>ng new</code> e visualização com <code>ng serve</code>.|<em>U5P1_Angular_Pratica_1</em>|
+|II  | Componentes |<em>U5P2_Angular_Pratica_2</em>|
+|III  | Diretivas |<em>U5P3_Angular_Pratica_3</em>|
+|IV  | Roteamento |<em>U5P4_Angular_Pratica_4</em>|
+|V  | Serviços |<em>U5P5_Angular_Pratica_5</em>|
+|VI  | Formulários |<em>U5P6_Angular_Pratica_6</em>|
+|VII  | HTTP |<em>U5P7_Angular_Pratica_7</em>|
 
 ### :bookmark_tabs: Como usar?
 
