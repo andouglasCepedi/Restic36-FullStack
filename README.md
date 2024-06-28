@@ -7,7 +7,7 @@
 
 ## Trilha FullStack- Unidade V (Angular) - Prática 7
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Tecnologias&message=HTML|CSS|TYPESCRIPT|ANGULAR&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=Tecnologias&message=HTML|CSS|TYPESCRIPT|HTTP|JSON|ANGULAR&color=GREEN&style=for-the-badge)
 
 ### :bookmark_tabs: Descrição
 
