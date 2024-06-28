@@ -1,5 +1,5 @@
 <div align="center">
-<img src="src/images/logo-nav.png" width="400px">
+<img src="logo-nav.png" width="400px">
 </div>
 
 ---
