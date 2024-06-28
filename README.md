@@ -10,7 +10,7 @@
 
 Seja bem-vindo (a) ao repositório da trilha de Fullstack do Restic36 - Parte 1 (Frontend)!
 
-Aqui você vai encontrar os códigos de exemplos de cada unidade da primeira parte da nossa trilha que será voltada para o <em>frontend</em>. Este repositório está estruturado em 18 branchs que vai avançando no desenvolvimento da aplicação web, desde as linguagens básicas HTML, CSS e Javascript até o <b>Angular</b>, foco principal dessa primeira parte.
+Aqui você vai encontrar os códigos de exemplos de cada unidade da primeira parte da nossa trilha que será voltada para o <em>frontend</em>. Este repositório está estruturado em 17 branchs que vai avançando no desenvolvimento da aplicação web, desde as linguagens básicas HTML, CSS e Javascript até o <b>Angular</b>, foco principal dessa primeira parte.
 
 O repositório está estruturado da seguinte forma
 
