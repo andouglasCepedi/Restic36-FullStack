@@ -23,9 +23,12 @@ O repositório está estruturado da seguinte forma
 |III  |   Inserção do CSS na página HTML. Análise da tag <code> link </code> e entendimento sobre como adicionar propriedades em elementos ID, class e tags. |<em>HTML_CSS_Pratica_3</em>|
 |IV  |   Inserção de estilo no HTML criado nas práticas iniciais. |<em>HTML_CSS_Pratica_4</em>|
 |V  |  Flexbox Layout |<em>HTML_CSS_Pratica_5</em>|
-|V  |  Media Queries |<em>HTML_CSS_Pratica_6</em>|
+|VI  |  Media Queries |<em>HTML_CSS_Pratica_6</em>|
     
 2. <u>Unidade II - Github</u>
+
+Esta unidade não possui branch específica.  
+
 3. <u>Unidade III - Javascript (2 branches)</u>
 
 | Prática | Descrição | Branch|
@@ -37,10 +40,10 @@ O repositório está estruturado da seguinte forma
 
 | Prática | Descrição | Branch|
 |---------|-----------|-------|
-|I  | Chamadas HTTP e <em>json-server</em>.|<em>Javascript_Pratica_1</em>|
+|I  | Chamadas HTTP e <em>json-server</em>.|<em>HTTP_Pratica</em>|
 
 
-5. Unidade V - Angular
+1. Unidade V - Angular
 
 | Prática | Descrição | Branch|
 |---------|-----------|-------|
