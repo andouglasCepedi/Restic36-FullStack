@@ -10,7 +10,7 @@
 
 ### Exemplo Typescript
 
-Nesta branch adicionamos o código do exemplo que seria apresentado na aula do sábado que falamos de Typescript. Para rodar o código, basta executar o comando <b>tsc</b> no diretório raiz da pasta Kanban. Para rodar um servidor local, vocês podem utilizar o http-server. Para intalar, basta usar o comando
+Nesta branch adicionamos o código do exemplo que seria apresentado na aula do sábado que falamos de Typescript. Para compilar o código TS, basta executar o comando <b>tsc</b> no diretório raiz da pasta Kanban. Para rodar um servidor local, vocês podem utilizar o http-server. Para intalar, basta usar o comando
 
 ```Typescript
 npm install -g http-server
