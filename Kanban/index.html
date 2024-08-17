@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quadro Kanban</h1>
+    <div id="kanban-board">
+        <div class="column" id="todo">
+            <h2>A Fazer</h2>
+            <ul id="todo-list"></ul>
+            <button onclick="addTask('todo')">Adicionar Tarefa</button>
+        </div>
+        <div class="column" id="in-progress">
+            <h2>Em Progresso</h2>
+            <ul id="in-progress-list"></ul>
+            <button onclick="addTask('in-progress')">Adicionar Tarefa</button>
+        </div>
+        <div class="column" id="done">
+            <h2>Concluídas</h2>
+            <ul id="done-list"></ul>
+            <button onclick="addTask('done')">Adicionar Tarefa</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
